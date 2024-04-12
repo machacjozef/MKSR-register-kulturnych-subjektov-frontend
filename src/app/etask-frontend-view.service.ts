@@ -11,8 +11,8 @@ import {PublicWorkflowViewComponent} from './views/public/public-workflow-view/p
 import {SideNavCasesCaseViewComponent} from './views/side-nav/cases/side-nav-cases-case-view.component';
 import {EmptyViewComponent} from './views/side-nav/emptyView/empty-view.component';
 import {SidenavComponent} from './views/side-nav/sidenav.component';
-import {SideNavTasksTaskViewComponent} from './views/side-nav/tasks/side-nav-tasks-task-view.component';
 import {WorkflowViewComponent} from './views/workflow/workflow-view/workflow-view.component';
+import {ETaskTabViewComponent} from "./views/side-nav/tab-view/default-tab-view.component";
 
 
 @Injectable({
@@ -25,7 +25,6 @@ export class EtaskFrontendViewService extends ViewService {
     super([{id: 'RoleAssignmentComponent', class: RoleAssignmentComponent},
       {id: 'WorkflowViewComponent', class: WorkflowViewComponent},
       {id: 'EmptyViewComponent', class: EmptyViewComponent},
-      {id: 'SideNavTasksTaskViewComponent', class: SideNavTasksTaskViewComponent},
       {id: 'SideNavCasesCaseViewComponent', class: SideNavCasesCaseViewComponent},
       {id: 'SidenavComponent', class: SidenavComponent},
       {id: 'LoginComponent', class: LoginComponent},
@@ -34,6 +33,7 @@ export class EtaskFrontendViewService extends ViewService {
       {id: 'PublicTaskViewComponent', class: PublicTaskViewComponent},
       {id: 'PublicWorkflowViewComponent', class: PublicWorkflowViewComponent},
       {id: 'PublicSingleTaskViewComponent', class: PublicSingleTaskViewComponent},
+      {id: 'ETaskTabViewComponent', class: ETaskTabViewComponent},
     ], configurationService, router, loggerService);
   }
 }

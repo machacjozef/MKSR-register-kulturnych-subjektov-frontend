@@ -58,9 +58,9 @@ import {
   EtaskGroupNavigationComponentResolverService,
 } from './views/side-nav/service/etask-group-navigation-component-resolver.service';
 import { SidenavComponent } from './views/side-nav/sidenav.component';
-import { SideNavTasksTaskViewComponent } from './views/side-nav/tasks/side-nav-tasks-task-view.component';
 import { WorkflowPanelComponent } from './views/workflow/workflow-panel/workflow-panel.component';
 import { WorkflowViewComponent } from './views/workflow/workflow-view/workflow-view.component';
+import {ETaskTabViewComponent} from "./views/side-nav/tab-view/default-tab-view.component";
 
 
 @NgModule({
@@ -70,7 +70,6 @@ import { WorkflowViewComponent } from './views/workflow/workflow-view/workflow-v
     LoginComponent,
     SidenavComponent,
     SideNavCasesCaseViewComponent,
-    SideNavTasksTaskViewComponent,
     EmptyViewComponent,
     DashboardComponent,
     PublicResolverComponent,
@@ -83,6 +82,7 @@ import { WorkflowViewComponent } from './views/workflow/workflow-view/workflow-v
     ETaskDoubleDrawerComponent,
     WorkflowPanelComponent,
     WorkflowViewComponent,
+    ETaskTabViewComponent,
   ],
   imports: [
     BrowserModule,

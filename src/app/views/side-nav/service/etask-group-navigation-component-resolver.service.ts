@@ -8,6 +8,7 @@ import {
   LoggerService,
   TaskResourceService,
 } from '@netgrif/components-core';
+import {ETaskTabViewComponent} from "../tab-view/default-tab-view.component";
 
 @Injectable()
 export class EtaskGroupNavigationComponentResolverService extends GroupNavigationComponentResolverService {
@@ -25,7 +26,7 @@ export class EtaskGroupNavigationComponentResolverService extends GroupNavigatio
 
     switch (filter.type) {
       case FilterType.CASE:
-        return DefaultTabViewComponent;
+        return ETaskTabViewComponent;
       case FilterType.TASK:
         return DefaultSimpleTaskViewComponent;
       default:

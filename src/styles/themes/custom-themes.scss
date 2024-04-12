@@ -66,8 +66,74 @@ $etask-pink: (
   )
 );
 
-$etask-primary: mat.define-palette($etask-blue);
-$etask-accent: mat.define-palette($etask-pink);
+$idsk-blue: (
+  50: #E1F2FF,
+  100: #B5DEFF,
+  200: #83C8FF,
+  300: #51B1FF,
+  400: #2CA1FF,
+  500: #0790FF,
+  600: #0688FF,
+  700: #057DFF,
+  800: #0473FF,
+  900: #0261FF,
+  A100: #feeeb5,
+  A200: #fee386,
+  A400: #ffcf31,
+  A700: #ffa610,
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: rgba(black, 0.87),
+    400: rgba(black, 0.87),
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: rgba(black, 0.87),
+    A200: rgba(black, 0.87),
+    A400: rgba(black, 0.87),
+    A700: rgba(black, 0.87),
+  )
+);
+
+$idsk-red: (
+    50: #F9E3E2,
+    100: #F1BAB7,
+    200: #E88C87,
+    300: #DE5E57,
+    400: #D73C33,
+    500: #D0190F,
+    600: #CB160D,
+    700: #C4120B,
+    800: #BE0E08,
+    900: #B30804,
+    A100: #FFDDDC,
+    A200: #FFAAA9,
+    A400: #FF7876,
+    A700: #FF5F5D,
+    contrast: (
+        50: rgba(black, 0.87),
+        100: rgba(black, 0.87),
+        200: rgba(black, 0.87),
+        300: rgba(black, 0.87),
+        400: white,
+        500: white,
+        600: white,
+        700: white,
+        800: white,
+        900: white,
+        A100: rgba(black, 0.87),
+        A200: rgba(black, 0.87),
+        A400: rgba(black, 0.87),
+        A700: rgba(black, 0.87),
+    )
+);
+
+$etask-primary: mat.define-palette($idsk-blue);
+$etask-accent: mat.define-palette($idsk-red);
 $etask-warn: mat.define-palette(mat.$red-palette);
 
 $etask-theme: mat.define-light-theme($etask-primary, $etask-accent, $etask-warn);
