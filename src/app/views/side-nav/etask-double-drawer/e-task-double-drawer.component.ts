@@ -15,12 +15,11 @@ import {
   LoggerService,
   MenuOrder,
   NavigationItem,
-  UriNodeResource,
   UriService,
   UserService,
 } from '@netgrif/components-core';
 import {EtaskUriService} from '../../dashboard/service/etask-uri.service';
-import { TranslateService } from '@ngx-translate/core';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-e-task-double-drawer',
@@ -76,13 +75,14 @@ export class ETaskDoubleDrawerComponent extends NavigationDoubleDrawerComponent 
       this._router.navigate(['dashboard']);
     });
     this.leftItems = new Array<NavigationItem>();
-        this.rightItems = new Array<NavigationItem>();
-        this.leftLoading$ = new LoadingEmitter();
-        this.rightLoading$ = new LoadingEmitter();
-        this.nodeLoading$ = new LoadingEmitter();
-        this.itemsOrder = MenuOrder.Ascending;
-        this.hiddenCustomItems = [];
-        this.moreItems = new Array<NavigationItem>();
-        this._childCustomViews = {};
+    this.rightItems = new Array<NavigationItem>();
+    this.leftLoading$ = new LoadingEmitter();
+    this.rightLoading$ = new LoadingEmitter();
+    this.nodeLoading$ = new LoadingEmitter();
+    this.itemsOrder = MenuOrder.Ascending;
+    this.hiddenCustomItems = [];
+    this.moreItems = new Array<NavigationItem>();
+    this._childCustomViews = {};
   }
+
 }

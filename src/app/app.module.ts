@@ -25,7 +25,6 @@ import {
 import {
   AuthenticationModule,
   ConfigurationService,
-  GroupNavigationComponentResolverService,
   MaterialModule,
   TaskResourceService,
   TranslateLibModule,
@@ -54,9 +53,6 @@ import { ETaskTaskResourceService } from './views/public/service/e-task-task-res
 import { SideNavCasesCaseViewComponent } from './views/side-nav/cases/side-nav-cases-case-view.component';
 import { EmptyViewComponent } from './views/side-nav/emptyView/empty-view.component';
 import { ETaskDoubleDrawerComponent } from './views/side-nav/etask-double-drawer/e-task-double-drawer.component';
-import {
-  EtaskGroupNavigationComponentResolverService,
-} from './views/side-nav/service/etask-group-navigation-component-resolver.service';
 import { SidenavComponent } from './views/side-nav/sidenav.component';
 import { SideNavTasksTaskViewComponent } from './views/side-nav/tasks/side-nav-tasks-task-view.component';
 import { WorkflowPanelComponent } from './views/workflow/workflow-panel/workflow-panel.component';
@@ -122,7 +118,6 @@ import { WorkflowViewComponent } from './views/workflow/workflow-view/workflow-v
     { provide: ViewService, useClass: EtaskFrontendViewService },
     { provide: TaskResourceService, useClass: ETaskTaskResourceService },
     { provide: UriResourceService, useClass: EtaskUriResourceService },
-    { provide: GroupNavigationComponentResolverService, useClass: EtaskGroupNavigationComponentResolverService },
   ],
 })
 export class AppModule {

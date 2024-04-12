@@ -10,12 +10,12 @@ import {
   NavigationItem,
   RoleAccess,
   TaskResourceService,
-  User,  UserService,
+  User,
+  UserService,
 } from '@netgrif/components-core';
 import {Subscription} from 'rxjs';
 import {map} from 'rxjs/operators';
 import custom_views from '../../../../assets/custom_views.json';
-import icons from '../../../../assets/uriNodeIcons.json';
 import {ETaskUriNodeResource} from '../service/etask-uri-resource.service';
 import {EtaskUriService} from '../service/etask-uri.service';
 
@@ -83,10 +83,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
   }
 
   public getNodeIcon(node: ETaskUriNodeResource) {
-    if (icons[node.name]) {
-      return icons[node.name];
-    }
-    return 'folder';
+    return node.icon
   }
 
   /* custom views */
